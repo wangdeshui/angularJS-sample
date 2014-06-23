@@ -1,0 +1,62 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewBag.Title - My ASP.NET Application</title>
+    @Styles.Render("~/Content/css")
+    @Scripts.Render("~/bundles/modernizr")
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/bootstrap")
+    @Scripts.Render("~/bundles/angular")
+    @Scripts.Render("~/bundles/angularUI")
+    @Scripts.Render("~/bundles/TodoApp")
+    @RenderSection("scripts", required: false)
+</head>
+<body ng-app="TodoApp">
+    
+
+    <script type="text/ng-template" id="common-modal.html">        
+            <div class="modal fade" id="{{modalid}}" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                            <h4 class="modal-title" id="myModalLabel">{{title}}</h4>
+                        </div>
+                        <div class="modal-body">
+                            <div ng-transclude></div>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-default" data-dismiss="modal">No</button>
+                            <button type="button" class="btn btn-primary"  ng-click="call()">Yes</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        
+    </script>
+    
+    
+
+    <div class="navbar navbar-inverse navbar-fixed-top">
+        <h1 style="color:white">Angular.js training project</h1>
+        @*<div class="container">
+               
+            </div>*@
+    </div>
+        <div class="container body-content" style="margin-top:30px;">
+            @RenderBody()
+            <hr />
+            <footer>
+                <p copyright>
+                    
+                </p>
+            </footer>
+        </div>
+
+       
+
+
+</body>
+</html>

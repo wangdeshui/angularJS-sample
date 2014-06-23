@@ -1,0 +1,92 @@
+﻿@{
+    ViewBag.Title = "Directive";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+
+<div xdraggable>
+    <img ng-src="@Url.Content("~/Content/badi.png")" />
+
+</div>
+
+<div upcaser>
+    <h2>Directive</h2>
+    <p>Hello Directive</p>
+    <div>This is test upcaser</div>
+</div>
+<hr />
+
+<div ng-controller="parentController">
+    <div style="border: solid 1px red;">
+        <p>I am parent </p>
+        <h3>{{in_message}}</h3>
+        <h3>{{out_message}}</h3>
+        <div class="panel">
+            <div class="panel-body" informer>
+                <div ng-controller="childController">
+                    <p>I am child</p>
+                    <h6>{{in_message}}</h6>
+                    <h6>{{out_message}}</h6>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+
+</div>
+
+<hr />
+
+<tabs>
+    <tab title="Tab 1">
+        WTF of jQuery?
+    </tab>
+    <tab title="Tab 2">
+        Oh, AngularJS is wonderful!
+    </tab>
+</tabs>
+
+<zippy title="level1">
+    This is Level1
+    <zippy title="------level2">
+        -------------------This is level2
+        <zippy title="------------------level3">
+            -----------------------------This is level3
+        </zippy>
+    </zippy>
+
+</zippy>
+
+
+    <div>
+        <h5 class="tt">Animate</h5>
+
+    </div>
+
+<style type="text/css">
+
+    .opened .body {
+        display: block;
+    }
+
+    .closed .body {
+        display: none;
+    }
+    
+     .tt {
+        border: solid 1px red;
+    }
+
+    .tt.ng-enter {
+        transition: 0.5s linear all;
+    }
+</style>
+
+
+    <script type="text/javascript">
+
+
+
+    </script>
+
