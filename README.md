@@ -6,7 +6,7 @@ The sample for training our developers
 Tips for Angular.js
 
 1. display Loading
-''' javascript
+``` javascript
  1 var app = angular.module("MyApp", ["ngResource"]);
  2 
  3 app.config(function ($httpProvider) {
@@ -31,6 +31,6 @@ Tips for Angular.js
 22     });
 23   };
 24 });
-'''
+```
 
 
