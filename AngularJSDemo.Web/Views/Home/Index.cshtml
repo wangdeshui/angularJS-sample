@@ -23,7 +23,7 @@
     <table class="table table-bordered">
         <thead>
             <tr>
-                <th ng-click="sort('Id')">Id <i ng-class="{ascclass:reverse}">aa</i></th>
+                <th ng-click="sort('Id')">Id</th>
                 <th ng-click="sort('Name')">Name</th>
                 <th ng-click="sort('Description')">Description</th>
                 <th ng-click="sort('Date')">Date</th>
@@ -54,9 +54,7 @@
         
         <li ng-class="lastPage()?'disabled':''"><a ng-click="nextPage()">&raquo;</a></li>
     </ul>
-    
-    <p>{{TodoItem.Name+"  "+TodoItem.Description}}</p>
-    
+
     <commonmodal modalid="deleteTodoItem" title="Delete ToDo Item" call="Delete()">
         <div>Are you sure to delete {{DeletedId}}?</div>
     </commonmodal>

@@ -35,13 +35,13 @@ namespace AngularJSDemo.Web
 
 
             bundles.Add(new ScriptBundle("~/bundles/TodoApp").Include(
-                     "~/Scripts/TodoApp.js",
+                     "~/Scripts/Src/TodoApp.js",
                      "~/Scripts/vendor/moment.js",
                      "~/Scripts/vendor/bootstrap-datetimepicker.js",
-                     "~/Scripts/Directives.js",
-                     "~/Scripts/Events.js",
-                     "~/Scripts/Filters.js",
-                         "~/Scripts/TodoService.js"
+                     "~/Scripts/Src/Directives.js",
+                     "~/Scripts/Src/Events.js",
+                     "~/Scripts/Src/Filters.js",
+                         "~/Scripts/Src/TodoService.js"
                      ));
 
             bundles.Add(new StyleBundle("~/Content/css").Include(

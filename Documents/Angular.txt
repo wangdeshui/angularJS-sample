@@ -1,0 +1,6 @@
+http://www.itaware.eu/2012/10/19/angularjs-unit-tests-and-end-to-end-tests/
+http://www.cnblogs.com/fuland/p/3699169.html
+http://karma-runner.github.io/0.12/index.html
+http://www.angularjs.cn/A00E
+http://blog.fens.me/nodejs-karma-jasmine/
+http://icodeit.org/2014/01/how-to-test-service-in-angularjs/

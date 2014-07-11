@@ -23,6 +23,12 @@ namespace AngularJSDemo.Web.Controllers
         }
 
 
+        public JsonResult GetById(int id)
+        {
+            return Json(new AngularJsDemoDbContext().Todos.First(x=>x.Id==id), JsonRequestBehavior.AllowGet);
+
+        }
+
         public ActionResult Popup()
         {
             return View(); 
