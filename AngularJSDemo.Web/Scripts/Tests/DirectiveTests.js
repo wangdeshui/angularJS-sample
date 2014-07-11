@@ -33,6 +33,9 @@
                 expect(selects.length).toEqual(3);
                 expect($('.title', element).text()).toEqual("------level2");
                 expect($('.zippy', element).hasClass("closed")).toEqual(true);
+
+                $('.title', element).click();
+                expect($('.zippy', element).hasClass("opened")).toEqual(true);
             });
 
         });
