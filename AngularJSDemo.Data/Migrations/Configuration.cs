@@ -1,18 +1,15 @@
 namespace AngularJSDemo.Data.Migrations
 {
-    using System;
-    using System.Data.Entity;
     using System.Data.Entity.Migrations;
-    using System.Linq;
 
-    internal sealed class Configuration : DbMigrationsConfiguration<AngularJSDemo.Data.AngularJsDemoDbContext>
+    internal sealed class Configuration : DbMigrationsConfiguration<AngularJsDemoDbContext>
     {
         public Configuration()
         {
-            AutomaticMigrationsEnabled = false;
+            AutomaticMigrationsEnabled = true;
         }
 
-        protected override void Seed(AngularJSDemo.Data.AngularJsDemoDbContext context)
+        protected override void Seed(AngularJsDemoDbContext context)
         {
             //  This method will be called after migrating to the latest version.
 
